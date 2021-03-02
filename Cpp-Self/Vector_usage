@@ -1,0 +1,48 @@
+# Vector Usage
+
+declaration : 
+
+vector<int> x;
+
+vector<string> str;
+
+vector<vector<int>> v;
+
+**We cannot have vectors containing references!**
+
+
+
+initialization:
+
+vector<T> v1;
+
+vector<T> v2(v1)    //v2 has a copy of each element in v1
+
+vector<T> v2 = v1   //same as above
+
+vector <T> v3 (n,val)   //v3 has n elements with value val
+
+vector <T> v4(n)   //v4 has n copies of a value-initialized object
+
+vector<T> v5{a,b,c...}  // list initialization. 
+
+**If you wanna list initialize a vector, the objects in the brace must match the element type of the vector elements. **
+
+suggestion: don't initialize vectors to a fixed capacity. It is efficient to add new elements to the vector. 
+
+
+
+vector operations: 
+
+v.empty()  //returns TRUE if the vector is empty.
+
+v.size() //Like the name says.
+
+v.push_back(t) //Adds an element with value t to the end of v
+
+v[n] //like an array
+
+v1 = v2 
+
+v1==v2
+
